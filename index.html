@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+   <title>TwittMap</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initm">    </script>
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/tweet.css">
+
+</head>
+
+<body onload="initm">
+
+   <div id="wrapper">
+   <div id="header">
+      <h class="title">TwittMap</h>
+      <label id="dropdownL" for="dropdown"><b>#HashTag :<b></label>
+      <select name="dropdown" id="cd-dropdown" class="cd-select" name="topic">
+         <option value="Select Topic">Select Topic</option>
+         <option value="Trump">Donald Trump</option>
+         <option value="weather">Weather</option>
+         <option value="game">Game</option>
+         <option value="Obama">Obama</option>
+         <option value="samsung">Samsung</option>
+         <option value="space">Space</option>
+         <option value="earth">Earth</option>
+         <option value="ghost">Ghost</option>
+         <option value="India">India</option>
+         <option value="USA">USA</option>
+      </select>
+   </div>
+   <div id="contentbelow">
+      <div id="map">
+      </div>
+   </div>
+<div id = 'text'><textarea rows="25" cols="60" id="textarea_id"></textarea></div>
+  <!--<div id="container">  
+    <div id="scrollbox" >  
+        <div id="content" >  
+        <p>this is scrool</p> 
+        <p>this is scrool</p> 
+        </div>  
+    </div>  
+    <p><span id="status" ></span></p>  
+</div> --> 
+   <script src="./js/SearchES.js"></script>
+</body>
+
+</html>
